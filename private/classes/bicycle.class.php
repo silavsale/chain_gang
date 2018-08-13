@@ -11,8 +11,8 @@ class Bicycle
     public $description = "New bicycle";
     public $genders;
     public $condition_id;
+    public static $instance_count = 0;
     protected static $wheels = 2;
-    protected static $instance_count = 0;
     private $weight_kg;
 
     public const CATEGORIES = ['Road', 'Mountain', 'Hybrid', 'Cruiser', 'City', 'BMX'];
@@ -21,6 +21,10 @@ class Bicycle
 
     public const CONDITION = [1 => 'Beat up', 2 => 'Decent', 3 => 'GOOD', 4 => 'Great', 5 => 'Like New'];
 
+    public function __construct()
+    {
+        self::$instance_count++;
+    }
 
     public function condition($condition_id)
     {

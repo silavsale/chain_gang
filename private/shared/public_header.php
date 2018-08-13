@@ -1,11 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Sergo
- * Date: 8/11/2018
- * Time: 4:39 PM
- */
 
+//echo " dirname(__FILE__) " . dirname(__FILE__) . "<br/>";
+//echo "dirname(PRIVATE_PATH) " . dirname(PRIVATE_PATH) . "<br/>";
 
 if (!isset($page_title)) {
     $page_title = 'bike shop';
@@ -27,9 +23,3 @@ if (!isset($page_title)) {
 <header>
     <h1>Bike Shop</h1>
 </header>
-
-<navigation>
-    <ul>
-        <li><a href="">Menu</a></li>
-    </ul>
-</navigation>

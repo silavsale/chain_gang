@@ -9,8 +9,6 @@ define("PROJECT_PATH", dirname(PRIVATE_PATH));
 define("PUBLIC_PATH", PROJECT_PATH . '/public');
 define("SHARED_PATH", PRIVATE_PATH . '/shared');
 
-echo dirname(__FILE__);
-
 function my_autoload($class)
 {
     if (preg_match('/\A\w+\Z/', $class)) {
@@ -19,8 +17,6 @@ function my_autoload($class)
 }
 
 spl_autoload_register('my_autoload');
-
-
 
 // Assign the root URL to a PHP constant
 // * Do not need to include the domain
@@ -38,8 +34,5 @@ require_once('functions.php');
 //require_once ('validation_function.php');
 
 $errors = [];
-
-
-
 
 ?>
