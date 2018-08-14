@@ -40,6 +40,9 @@ echo "<hr />";
 echo 'Instance count: ' . Bicycle::$instance_count . '<br />';
 echo "<hr />";
 
+
+echo $b->convert_weight("kg", 5);
+
 ?>
 
 <?php include(SHARED_PATH . '/public_footer.php') ?>
